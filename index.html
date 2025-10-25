@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte Generativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Galería de Arte Generativo ✨</h1>
+            <p class="subtitle">Mueve tu mouse y observa cómo el arte cobra vida</p>
+        </header>
+
+        <div class="controls">
+            <button id="changeMode" class="btn">Cambiar Modo</button>
+            <button id="changeColor" class="btn">Cambiar Color</button>
+            <button id="clearCanvas" class="btn clear-btn">Limpiar</button>
+            <label class="switch">
+                <input type="checkbox" id="autoAnimate">
+                <span class="slider">Animación Automática</span>
+            </label>
+        </div>
+
+        <div class="info-panel">
+            <span id="modeDisplay">Modo: Círculos Concéntricos</span>
+            <span id="particleCount">Partículas: 0</span>
+        </div>
+
+        <canvas id="artCanvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
